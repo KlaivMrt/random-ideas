@@ -1,0 +1,26 @@
+$dark-gray: #444;
+$medium-gray: #777d92;
+$light-gray: #d4dded;
+
+$dark-blue: #010052;
+$medium-blue: #2a36ef;
+$light-blue: #4a83fb;
+$orange: #ffb508;
+
+$wide-container: 1100px;
+$larg-container: 850px;
+$medium-container: 750px;
+$mobile-container: 400px;
+
+$b-radius: 5px;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
+}

@@ -1,0 +1,33 @@
+.container {
+    max-width: $wide-container;
+    margin: auto;
+}
+
+.btn {
+    width: 100px;
+    height: 25px;
+    border-radius: 5px;
+    border: none;
+    background: $orange;
+    color: $dark-blue;
+    font-weight: bold;
+    font-size: 1.15rem;
+}
+
+@media (max-width: 1000px) {
+    .container {
+        max-width: $larg-container;
+    }
+}
+
+@media (max-width: 900px) {
+    .container {
+        max-width: $medium-container;
+    }
+}
+
+@media (max-width: 700px) {
+    .container {
+        max-width: $mobile-container;
+    }
+}

@@ -1,0 +1,100 @@
+@import "config";
+@import "utilities";
+
+#ideas {
+    margin-top: 1rem;
+    
+    .container{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: .3rem;
+    }
+
+    .idea {
+        background: #fff;
+        border: $light-gray 1px solid;
+        padding: 1rem;
+        border-radius: $b-radius;
+        position: relative;
+
+        .text {
+            margin-bottom: 1rem;
+            font-weight: bold;
+        }
+
+        .tag{
+            margin-bottom: 1rem;
+            display: inline-block;
+            background: $light-blue;
+            padding: .3rem;
+            border-radius: 5px;
+            color: #fff;
+        }
+
+        .date {
+            span {
+                font-weight: bold;
+            }
+        }
+
+        .delete {
+            &-vertical {
+                position: absolute;
+                width: 15px;
+                height: 3px;
+                background: red;
+                top: .5rem;
+                right: .5rem;
+                transform: rotate(45deg);
+            }
+
+            &-horizontal {
+                position: absolute;
+                width: 15px;
+                height: 3px;
+                background: red;
+                top: .5rem;
+                right: .5rem;
+                transform: rotate(135deg);
+            }
+
+            &-select {
+                width: 15px;
+                height: 15px;
+                position: absolute;
+                top: .1rem;
+                right: .5rem;
+            }
+        }
+
+        // .edit {
+        //     &-vertical {
+        //         position: absolute;
+        //         background: $dark-blue;
+        //         height: 10px;
+        //         width: 3px;
+        //         top: .45rem;
+        //         right: 2.5rem;
+        //         transform: rotate(60deg);
+        //     }
+
+        //     &-horizontal {
+        //         position: absolute;
+        //         background: $dark-blue;
+        //         height: 10px;
+        //         width: 5px;
+        //         top: .25rem;
+        //         right: 2.1rem;
+        //         transform: rotate(-35deg);
+        //     }
+
+        //     &-select {
+        //         opacity: .7;
+        //         height: 15px;
+        //         width: 17px;
+        //         top: .2rem;
+        //         right: 1.9rem;
+        //     }
+        // }
+    }
+}
